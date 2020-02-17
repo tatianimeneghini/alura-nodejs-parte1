@@ -1,0 +1,19 @@
+{
+  "name": "casadocodigo",
+  "version": "1.0.0",
+  "description": "livraria Casa do Código - Gabriel Leite",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Tatiani Meneghini",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.16.3",
+    "marko": "4.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  }
+}
