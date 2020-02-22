@@ -12,6 +12,6 @@ Instalar os seguintes componentes:
 npm install method-override@3.0.0 --save-exact
 
 ### Rotas
-GET: Consultar livros, com SQL, através de lista dinâmica da biblioteca Marko.
-POST: Cadastrar livros através de um formulário da biblioteca Marko.
-DELETE: Remover livro através de botão incluso no formulário.
+* GET: Consultar livros, com SQL, através de lista dinâmica da biblioteca Marko.
+* POST: Cadastrar livros através de um formulário da biblioteca Marko.
+* DELETE: Remover livro através de botão incluso no formulário.
