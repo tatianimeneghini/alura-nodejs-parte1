@@ -41,19 +41,25 @@ app.get("/livros", function(request, response) {
             .catch(erro => console.log(erro));
     });
 
-    app.get("/livro/:id", function(request, response) {
-        console.log(request.body);
-        const livroDao = new LivroDao(db);
-        livroDao.buscaPorId(request.body)
-            .then()
-    });
-
-    app.patch("/livros", function(request, response) {
+    app.put("/livros", function(request, response) {
         console.log(request.body);
         const livroDao = new LivroDao(db);
         livroDao.atualiza(request.body)
             .then(response.redirect("/livros"))
-            .catch(error => console.log(erro));
+            .catch(erro => console.log(erro));
+    });
+
+    app.get("/livros/form/:id", function(request, response) {
+        const id = request.params.id;
+        const livroDao = new LivroDao(db);
+        livroDao.buscaPorId(id)
+            .then(livro => 
+                response.marko(
+                    require("../views/livros/form/form.marko"),
+                    { livro: livro }
+                )
+            )
+            .catch(erro => console.log(erro));
     });
 
     app.delete("/livros/:id", function(request, response) {

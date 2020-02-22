@@ -9,6 +9,7 @@ Instalar os seguintes componentes:
 - npm install marko@4.13.4-1 --save-exact
 - npm install sqlite3@4.0.2 --save-exact
 - npm install body-parser@1.18.3 --save-exact
+npm install method-override@3.0.0 --save-exact
 
 ### Rotas
 GET: Consultar livros, com SQL, através de lista dinâmica da biblioteca Marko.
